@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
 .container {
   display: flex;
+}
+
+label {
+  font-size: 1rem;
 }
 
 .photo {
@@ -34,6 +45,23 @@ p {
   font-size: 1.6rem;
 }
 
+.text {
+  margin: 1.2rem 0;
+}
+
 .form-section {
   padding: 0 140px
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  min-width: 35%; /*Note: Not sure if this is needed*/
 }
