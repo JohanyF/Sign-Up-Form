@@ -45,12 +45,13 @@ p {
   font-size: 1.6rem;
 }
 
-.text {
-  margin: 1.2rem 0;
+.header-form-text {
+  margin-bottom: 1.2rem;
 }
 
 .form-section {
-  padding: 0 140px
+  padding: 0 140px;
+  margin: 1.2rem 0;
 }
 
 .form {
@@ -64,4 +65,22 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 35%; /*Note: Not sure if this is needed*/
+}
+
+.form-inputs > input {
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+}
+
+.footer {
+  padding: 0 140px;
+}
+
+button {
+  padding: 1rem 5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
 }
