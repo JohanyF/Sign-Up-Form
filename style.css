@@ -13,6 +13,7 @@ body {
 
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 label {
@@ -23,6 +24,7 @@ label {
   background-image: url(img/Ocean-ivan-bandura-2FEE6BR343k-unsplash.jpg);
   background-size: cover;
   width: 40vw;
+  /*height: 100vh;*/
 }
 
 .right { 
@@ -30,11 +32,12 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 2;
+  background-color: rgba(3, 120, 137, 0.55);
 }
 
 .header {
-  padding: 90px 140px;
-  background-color: darkgray;
+  padding: 0rem 8rem;
 }
 
 p:nth-child(3) {
@@ -50,8 +53,9 @@ p {
 }
 
 .form-section {
-  padding: 0 140px;
+  padding: 2rem 8rem;
   margin: 1.2rem 0;
+  background-color: white;
 }
 
 .form {
@@ -73,14 +77,20 @@ p {
 }
 
 .footer {
-  padding: 0 140px;
+  padding: 0rem 8rem;
 }
 
 button {
   padding: 1rem 5rem;
   border-radius: 0.5rem;
+  margin-top: 2rem;
   font-weight: bold;
-  background-color: lightgray;
   border: none;
   cursor: pointer;
+  background-color: rgba(0, 68, 77, 0.93);
+  color: white;
+}
+
+.footer-text {
+  margin-top: 2rem;
 }
