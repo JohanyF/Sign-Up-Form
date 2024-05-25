@@ -7,6 +7,10 @@
     margin: 0;
   }
 
+:root {
+  --back-color: #09A6BE;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
 }
@@ -33,12 +37,18 @@ label {
   flex-direction: column;
   justify-content: center;
   flex-grow: 2;
-  background-color: rgba(3, 120, 137, 0.55);
+  /* background-color: rgba(3, 120, 137, 0.55); */
+  background-color: var(--back-color);
 }
 
 .header {
   padding: 0rem 8rem;
+  /* Change padding tp 0rem 4rem for all of the ones that have padding */
 }
+
+/* .header-text {
+  max-width: 90%;
+} */
 
 p:nth-child(3) {
   margin-top: 2rem;
