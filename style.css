@@ -117,8 +117,7 @@ input:focus {
 }
 
 input[type="email"]:invalid,
-input[type="tel"]:invalid {
+input[type="tel"]:invalid,
+input[type="password"]:invalid {
   border-color: red;
 }
-
-
