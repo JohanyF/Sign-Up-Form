@@ -38,16 +38,16 @@
                     <div class="form-inputs">
                         <!-- Add form validation for user adding phone number and other validations in the inputs-->
                         <label for="user_phone_number">Phone Number</label>
-                        <input type="tel" name="phone_number" id="user_phone_number">
+                        <input type="tel" name="phone_number" id="user_phone_number" pattern="\(\d{3}\)-\d{3}-\d{4}" placeholder="(XXX)-XXX-XXXX">
                     </div>
 
                     <div class="form-inputs">
                         <label for="user_password">Password</label>
-                        <input type="password" name="password" id="user_password">
+                        <input type="password" name="password" id="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character">
                     </div>
                     <div class="form-inputs">
                         <label for="user_confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="user_confirm_password">
+                        <input type="password" name="confirm_password" id="user_confirm_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character">
                     </div>    
                 </form>
             </div>
