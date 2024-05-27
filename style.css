@@ -42,20 +42,21 @@ label {
 }
 
 .header {
-  padding: 0rem 8rem;
-  /* Change padding tp 0rem 4rem for all of the ones that have padding */
+  max-height: 100%;
+  /* padding-top: 8.5rem; */
 }
 
-/* .header-text {
-  max-width: 90%;
-} */
+.header-text {
+  padding: 0rem 3rem;
+}
 
 p:nth-child(3) {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 p {
   font-size: 1.6rem;
+  max-width: 43ch;
 }
 
 .header-form-text {
@@ -63,10 +64,13 @@ p {
 }
 
 .form-section {
-  padding: 2rem 8rem;
+  padding: 1.5rem 3rem;
   margin: 1.2rem 0;
   background-color: white;
   box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.80);
+
+  /* height: 32vh; */
+  max-height: 100%;
 }
 
 .form {
@@ -88,11 +92,14 @@ p {
 }
 
 .footer {
-  padding: 0rem 8rem;
+  padding: 0rem 3rem;
+  /* height: 34vh; */
+
+  max-height: 100%;
 }
 
 button {
-  padding: 1rem 5rem;
+  padding: 1rem 3rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
   font-weight: bold;
@@ -100,10 +107,17 @@ button {
   cursor: pointer;
   background-color: rgba(0, 68, 77, 0.93);
   color: white;
+
+  box-shadow: 4px 4px 6px 0px rgb(72 72 72 / 48%);
+  font-size: 1rem;
 }
 
 .footer-text {
   margin-top: 2rem;
+}
+
+.footer-text > p {
+  font-size: 1.2rem;
 }
 
 input {
@@ -121,4 +135,9 @@ input[type="email"]:invalid,
 input[type="tel"]:invalid,
 input[type="password"]:invalid {
   border-color: red;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
 }
