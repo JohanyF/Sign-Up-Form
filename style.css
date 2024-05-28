@@ -30,6 +30,20 @@ label {
   background-size: cover;
   width: 40vw;
   /*height: 100vh;*/
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.photoCredit {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  color: white;
+}
+
+.photoCredit > a {
+  color: white;
 }
 
 .right { 
@@ -121,6 +135,11 @@ button {
   font-size: 1.2rem;
 }
 
+.footer-text > p > a {
+  text-decoration: none;
+  font-weight: 900;
+}
+
 input {
   outline: none;
   border: 2px solid #E5E7EB;
@@ -139,7 +158,3 @@ input[type="password"]:invalid {
   border-color: red;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 900;
-}
